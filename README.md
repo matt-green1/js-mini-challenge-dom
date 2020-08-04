@@ -26,7 +26,8 @@ Figure out what you need to change to give Javascript access to the `h1#header` 
 
 **YOUR NOTES**
 ```
-
+we needed to move script down in the html file so that all of the HTML loaded before the javascript
+then had to use stirng interpolation to log the variable
 ```
 
 ## Deliverable 2
@@ -35,6 +36,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 **YOUR NOTES**
 ```
+need to get the style property and set the color property (of style) to red
 
 ```
 
@@ -42,7 +44,7 @@ Now that you have access to the `h1#header` element, use Javascript to change th
 
 Now that we've got a beautiful red header, we can show some players on the page. The player data is stored in a variable called `PLAYERS` in the `data.js` file - you can still access that variable in your `index.js` file (see if you can figure out why!).
 
-First, uncomment the `console.log` under Deliverable 3 in the `index.js` file to see the data in the console. *For each* player in our application, we want to render their information on the DOM inside the `div#player-container` element. 
+First, uncomment the `console.log` under Deliverable 3 in the `index.js` file to see the data in the console. *For each* player in our application, we want to render their information on the DOM inside the `div#player-container` element.
 
 Create a DOM element that looks like this for each player and append it to the `div.player-container`:
 
@@ -57,16 +59,17 @@ Create a DOM element that looks like this for each player and append it to the `
 
 **YOUR NOTES**
 ```
-
+You can access data in index.js because data is executed first in the html file
+Wow this one was a doozy -
 ```
 
 ## Deliverable 4
 
 Uh-oh! A Manchester City player, Raheem Sterling, snuck into our list. Use Javascript to find the element with the `[data-number='7']` attribute, and remove that element from the page.
 
-Hint: You can use `querySelector` with [CSS Attribute Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) to find an element with a specific data-number. 
+Hint: You can use `querySelector` with [CSS Attribute Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) to find an element with a specific data-number.
 
 **YOUR NOTES**
 ```
-
+used attribute selector - important note! need to put quotes around the attribute value or it won't work
 ```
